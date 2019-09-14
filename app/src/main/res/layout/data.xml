@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="45dp"
+    android:background="#000"
+    android:layout_marginBottom="45dp"
+    android:layout_width="match_parent"
+
+    app:cardElevation="10dp"
+    android:layout_height="300dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/showtweet"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold|italic"
+            android:text="fdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfd"
+            android:layout_height="200dp" />
+        <View
+            android:layout_width="match_parent"
+            android:background="#35000000"
+            android:id="@+id/views"
+            android:layout_below="@id/showtweet"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:id="@+id/retweetlabel"
+            android:gravity="center_vertical"
+            android:text="Tweet Retweets :"
+            android:layout_below="@id/views"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/tweetCounter"
+            android:layout_below="@id/views"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/tweetier"
+            android:textSize="20sp"
+            android:textColor="#95E151"
+            android:layout_toRightOf="@id/retweetlabel"/>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
